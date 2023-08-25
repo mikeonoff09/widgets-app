@@ -36,9 +36,9 @@ class _HomeView extends StatelessWidget {
           trailing: Icon(
             Icons.arrow_forward_ios_rounded,
             color: colors.primary,
-          ),
+          ), 
           onTap: () {
-            // TODO: add navigation
+            Navigator.pushNamed(context, menuItem.link);
           },
         );
       },
