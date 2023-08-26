@@ -43,7 +43,7 @@ class _HomeView extends StatelessWidget {
           onTap: () {
             // Navigator.pushNamed(context, menuItem.link);
             // context.push(CardsScreen.name); // not dinamic
-            context.go(menuItem.link);
+            context.push(menuItem.link);
 
           },
         );
