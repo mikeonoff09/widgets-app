@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:widgets_app/config/menu/menu_items.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -22,7 +23,6 @@ class _HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     final colors = Theme.of(context).colorScheme;
     return ListView.builder(
-      // physics: const BouncingScrollPhysics(),
       itemCount: appMenuItems.length,
       itemBuilder: (BuildContext context, int index) {
         final menuItem = appMenuItems[index];
@@ -38,7 +38,8 @@ class _HomeView extends StatelessWidget {
             color: colors.primary,
           ), 
           onTap: () {
-            Navigator.pushNamed(context, menuItem.link);
+            // Navigator.pushNamed(context, menuItem.link);
+            context.go(menuItem.link);
           },
         );
       },
