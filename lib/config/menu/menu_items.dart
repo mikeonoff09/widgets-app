@@ -27,4 +27,35 @@ const appMenuItems = <MenuItem>[
     link: '/cards',
     icon: Icons.credit_card,
   ),
+  MenuItem(
+    title: "Animated Screen",
+    subtitle: 'Screen Animaciones',
+    link: '/animated',
+    icon: Icons.animation,
+  ),
+  MenuItem(
+    title: "App Tutorial",
+    subtitle: 'App Tutorial Screen',
+    link: '/app_tutorial',
+    icon: Icons.add_to_queue_outlined,
+  ),
+  MenuItem(
+    title: "Infinite Scroll",
+    subtitle: 'Infinite Scroll Screen',
+    link: '/infinite_scroll',
+    icon: Icons.arrow_circle_down,
+  ),
+  MenuItem(
+    title: "Progress Screen",
+    subtitle: 'Progress Screen Screen',
+    link: '/progress',
+    icon: Icons.panorama_fisheye_rounded,
+  ),
+  MenuItem(
+    title: "UI Controls Screen",
+    subtitle: 'Ui Controls Screen',
+    link: '/ui_controls',
+    icon: Icons.control_camera,
+  ),
+
 ];
