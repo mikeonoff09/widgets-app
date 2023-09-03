@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:widgets_app/config/router/app_router.dart';
 
 const cards = <Map<String, dynamic>>[
   {'elevation': 0.0, 'label': 'Elevation 0.0'},
@@ -12,7 +13,7 @@ const cards = <Map<String, dynamic>>[
 ];
 
 class CardsScreen extends StatelessWidget {
-  static const String name = 'cards_screen';
+  static const String name = AppRoutes.cards;
   const CardsScreen({super.key});
 
   @override

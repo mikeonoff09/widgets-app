@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:widgets_app/config/router/app_router.dart';
 
 class ButtonsScreen extends StatelessWidget {
-  static const String name = 'buttons_screen';
+  static const String name = AppRoutes.buttons;
   const ButtonsScreen({super.key});
 
   @override

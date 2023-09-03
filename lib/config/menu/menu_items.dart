@@ -57,5 +57,10 @@ const appMenuItems = <MenuItem>[
     link: '/ui_controls',
     icon: Icons.control_camera,
   ),
-
+  MenuItem(
+    title: "Snackbar Screen",
+    subtitle: 'Snackbars and Dialogs screen',
+    link: '/snackbars',
+    icon: Icons.add_alert_outlined,
+  ),
 ];
