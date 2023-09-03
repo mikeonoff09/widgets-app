@@ -8,6 +8,9 @@ class AppTutorialScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    // TODO: unimplemented
+    return Scaffold(
+      appBar: AppBar(title: const Text(name)),
+    );
   }
 }
