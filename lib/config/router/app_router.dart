@@ -1,4 +1,5 @@
 import 'package:go_router/go_router.dart';
+import 'package:widgets_app/presentation/screens/counter/counter_screen.dart';
 import 'package:widgets_app/presentation/screens/screens.dart';
 
 final appRouter = GoRouter(
@@ -8,6 +9,11 @@ final appRouter = GoRouter(
       path: AppRoutes.home,
       name: HomeScreen.name,
       builder: (context, state) => const HomeScreen(),
+    ),
+    GoRoute(
+      path: AppRoutes.counter,
+      name: CounterScreen.name,
+      builder: (context, state) => const CounterScreen(),
     ),
     GoRoute(
       path: AppRoutes.cards,
@@ -53,6 +59,7 @@ final appRouter = GoRouter(
 );
 
 class AppRoutes {
+  static const String counter = '/counter';
   static const String home = '/home';
   static const String cards = '/cards';
   static const String buttons = '/buttons';
