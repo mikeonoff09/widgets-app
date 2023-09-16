@@ -24,4 +24,11 @@ class AppTheme {
           centerTitle: false,
         ),
       );
+  // ThemeData getDarkTheme() => ThemeData(
+  //       useMaterial3: true,
+  //       colorSchemeSeed: colorList[selectedColor],
+  //       appBarTheme: const AppBarTheme(
+  //         centerTitle: false,
+  //       ),
+  //     );
 }
