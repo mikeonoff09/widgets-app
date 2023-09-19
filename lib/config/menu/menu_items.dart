@@ -16,6 +16,12 @@ class MenuItem {
 
 const appMenuItems = <MenuItem>[
   MenuItem(
+    title: "Theme Chagner",
+    subtitle: 'Screen to select the theme color',
+    link: '/theme_changer',
+    icon: Icons.change_circle,
+  ),
+  MenuItem(
     title: "Counter",
     subtitle: 'Riverpod => Screen with a counter',
     link: '/counter',

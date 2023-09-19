@@ -55,6 +55,11 @@ final appRouter = GoRouter(
       name: UiControlsScreen.name,
       builder: (context, state) => const UiControlsScreen(),
     ),
+    GoRoute(
+      path: AppRoutes.themeChanger,
+      name: ThemeChanger.name,
+      builder: (context, state) => const ThemeChanger(),
+    ),
   ],
 );
 
@@ -69,4 +74,5 @@ class AppRoutes {
   static const String progress = '/progress';
   static const String snackbars = '/snackbars';
   static const String uiControls = '/ui_controls';
+  static const String themeChanger = '/theme_changer';
 }

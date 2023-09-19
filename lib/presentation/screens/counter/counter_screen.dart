@@ -12,10 +12,10 @@ class CounterScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final tapCounter = ref.watch(counterProvider);
-    final isDarkMode = ref.watch(isDarkModeProvider);
+    // final isDarkMode = ref.watch(isDarkModeProvider);
     return Scaffold(
       appBar: AppBar(
-        title: Text('Riverpod Counter'),
+        title: const Text('Riverpod Counter'),
         actions: [
           IconButton(
             icon: Icon(
@@ -32,7 +32,7 @@ class CounterScreen extends ConsumerWidget {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
+        onPressed: () { 
           // updating looks better
           // ref.read(counterProvider.notifier).update((state) => state++);
           ref.read(counterProvider.notifier).state++;
